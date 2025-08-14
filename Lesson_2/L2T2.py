@@ -8,7 +8,7 @@ filtered = orders[orders['order_date'].notna()]
 russian_orders = orders[
     (orders['customer_id'] >= 68) & 
     (orders['customer_id'] <= 88) &
-    (orders['order_date'].dt.year == 2022) 
+    (orders['order_date'].dt.year == 2022)  
 ]
 
 result = russian_orders.iloc[4:10][['order_id', 'total']]
